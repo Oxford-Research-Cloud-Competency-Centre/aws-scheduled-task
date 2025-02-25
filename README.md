@@ -40,14 +40,14 @@
 <details>
 <summary>Step 6. Choose EventBridge as the source of the trigger </summary>
 
-![Step 6](README_images/add_trigger.png)
+![Step 6](README_images/trigger_source.png)
 
 ***
 </details>
 <details>
 <summary>Step 7. Create a new rule, give it a name (for example: daily_python_trigger), setup the Schedule Expression, for example cron(0 0 * * ? *) (runs daily at midnight UTC)</summary>
 
-![Step 7](README_images/add_trigger.png)
+![Step 7](README_images/trigger_params.png)
 
 ***
 </details>
