@@ -25,7 +25,14 @@ def lambda_handler(event, context):
         # If the bucket doesn't exist, create it
         if e.response['Error']['Code'] == '404':
             try:
-                s3.create_bucket(Bucket=bucket_name)
+                # Always specify the location constraint with the current region
+                region = os.environ['AWS_REGION']
+                s3.create_bucket(
+                    Bucket=bucket_name,
+                    CreateBucketConfiguration={
+                        'LocationConstraint': region
+                    }
+                )
                 print(f"Bucket {bucket_name} created successfully")
             except Exception as create_error:
                 return {
