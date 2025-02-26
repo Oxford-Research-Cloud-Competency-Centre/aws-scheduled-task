@@ -51,7 +51,15 @@ If you change the code and add custom modules, you might need to create a .zip f
 
 ***
 </details>
+<details>
+<summary>Step 6. Adjust timeout </summary>
 
+Change the default timeout (3 seconds) to a reasonable value (1 minute) 
+
+![Step 6](README_images/timeout.png)
+
+***
+</details>
 
 ## Scheduling
 
