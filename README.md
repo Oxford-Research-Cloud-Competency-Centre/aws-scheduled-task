@@ -2,6 +2,12 @@
 
 Scheduling a Python program to run daily in AWS
 
+FEATURES
+- The program will fetch a list of HTTP URLs 
+- The data is stored in a S3 bucket
+- The program creates the bucket if it doesn't exist
+- A new output directory is created for each trigger date
+
 # Instructions
 
 <details>
@@ -57,6 +63,23 @@ If you change the code and add custom modules, you might need to create a .zip f
 Change the default timeout (3 seconds) to a reasonable value (1 minute) 
 
 ![Step 6](README_images/timeout.png)
+
+***
+</details>
+<details>
+<summary>Step 7. Add permissions </summary>
+
+Access the role associated to the lambda function
+
+![Step 7](README_images/find_role.png)
+
+Press "Add permissions"
+
+![Step 7](README_images/add_permissions.png)
+
+Add S3 full access
+
+![Step 7](README_images/s3_full_access.png)
 
 ***
 </details>
