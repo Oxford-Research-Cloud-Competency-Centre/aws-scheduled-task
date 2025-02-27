@@ -84,6 +84,32 @@ Add S3 full access
 ***
 </details>
 
+## Testing
+
+<details>
+<summary>Step 1. Press "Test" </summary>
+
+Create an event if needed, wait for the output
+
+![Step 1](README_images/test_response.png)
+
+***
+</details>
+<details>
+<summary>Step 2. Go to the AWS Console and type "S3" in the search bar</summary>
+
+![Step 1](README_images/find_s3.png)
+
+***
+</details>
+<details>
+<summary>Step 3. Check the content of the bucket</summary>
+
+![Step 1](README_images/bucket.png)
+
+***
+</details>
+
 ## Scheduling
 
 <details>
